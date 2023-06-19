@@ -2,22 +2,37 @@
 <html>
 <head>
     <title>Electronics</title>
-    
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <h1>Electronics</h1>
+    <button onclick="redirectToPage('laptops.html')">Laptops</button>
+    <button onclick="redirectToPage('television.html')">Television</button>
+    <button onclick="redirectToPage('smartphones.html')">Smartphones</button>
 
-    <table>
-        <tr>
-            <td>Television</td>
-        </tr>
-        <tr>
-            <td>Smartphone</td>
-        </tr>
-        <tr>
-            <td>Laptop</td>
-        </tr>
-    </table>
-
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>

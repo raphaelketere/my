@@ -20,3 +20,6 @@ def electronics(request):
 
 def sports(request):
     return render(request, 'sports.html')
+
+def toyota (request):
+    return render(request, 'toyota.html')
