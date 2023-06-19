@@ -25,36 +25,14 @@
 </head>
 <body>
     <h1>Vehicle Varieties</h1>
+    <button onclick="redirectToPage('toyota.html')">Toyota</button>
+    <button onclick="redirectToPage('mazda.html')">Mazda</button>
+    <button onclick="redirectToPage('mercedes.html')">Mercedes Benz</button>
 
-    <table>
-        <tr>
-            <th>Vehicle Variety</th>
-            <th>Example</th>
-        </tr>
-        <tr>
-            <td>Car</td>
-            <td>Toyota Camry</td>
-        </tr>
-        <tr>
-            <td>Motorcycle</td>
-            <td>Harley-Davidson Sportster</td>
-        </tr>
-        <tr>
-            <td>Truck</td>
-            <td>Ford F-150</td>
-        </tr>
-        <tr>
-            <td>Van</td>
-            <td>Mercedes-Benz Sprinter</td>
-        </tr>
-        <tr>
-            <td>SUV</td>
-            <td>Jeep Wrangler</td>
-        </tr>
-        <tr>
-            <td>Bus</td>
-            <td>Volvo 9700</td>
-        </tr>
-    </table>
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>
